@@ -1,0 +1,182 @@
+@import url(./reset.css);
+
+body {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+h5 {
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.navbar {
+    width: 100%;
+    height: 3.5rem;
+    background-color: white;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar .left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar .right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar .center {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.navbar .center .search-left {
+    width: 22rem;
+    height: 2rem;
+    border: 1px solid rgba(204, 204, 204, 1);
+    border-right: 0;
+}
+
+.navbar .center .search-right {
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 1);
+    border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.navbar .right #avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.main-video {
+    width: 70%;
+    max-height: 800px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 0 0 4.7rem;
+    gap: 1rem;
+}
+
+.main-video .main-video-data {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.main-video .main-video-description {
+    text-align: left;
+    max-width: 40rem;
+    text-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.main-video #video-screen {
+    object-fit: cover;
+}
+
+.main-video .main-video-features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.625rem;
+}
+
+.main-video .main-video-features .channel {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-video .main-video-features .channel .channel-description {
+    font-size: .7rem;
+}
+
+.main-video .main-video-features .channel img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-video .main-video-features .subscribe {
+    background-color: red;
+    color: white;
+    padding: .8rem 1.8rem;
+    font-size: .9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5%;
+    border: none;
+}
+
+.main-video .main-video-features .features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+    gap: .5rem;
+}
+
+.related-videos {
+    width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0 1rem 0 1.5rem;
+    gap: 1rem;
+}
+
+.related-videos .video {
+    height: 5.625rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.related-videos .video .video-description {
+    width: 12.25rem;
+    height: 5.625rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+
+.related-videos .video .video-description p {
+    font-size: .75rem;       
+}
+
+.related-videos .video .video-image {
+    width: 10rem;
+    height: 5.625rem;
+    object-fit: cover;
+}
